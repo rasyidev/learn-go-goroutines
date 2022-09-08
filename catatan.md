@@ -21,3 +21,7 @@
 - chan: Tipe data Channel
 - Dibuat menggunakan function `make()`
 - Harus menentukan tipe data yang akan disimpan di dalam channel
+
+## Channel sebagai Parameter
+- Channel sering diimplementasikan pada parameter function untuk mengirim data menggunakan pointer (pass by reference)
+- Channel secara default akan menggunakan pointer, jadi tidak perlu menambahkan `*` atau `&`
