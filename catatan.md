@@ -25,3 +25,14 @@
 ## Channel sebagai Parameter
 - Channel sering diimplementasikan pada parameter function untuk mengirim data menggunakan pointer (pass by reference)
 - Channel secara default akan menggunakan pointer, jadi tidak perlu menambahkan `*` atau `&`
+
+## Channel in dan out
+- in: menandai bahwa channel dalam suatu function hanya digunakan untuk **menerima** data
+- out: menandai bahwa channel dalam suatu function hanya digunakan untuk **mengirim** data
+- in: `chan<-`
+- out: `<-chan`
+
+## Buffered Channel
+- Untuk menampung data antrian di dalam channel
+- Biasa digunakan jika lebih dari 1 data yang akan dikirim ke channel tertentu
+- Dapat ditentukan jumlah buffer: make(chan <tipedata>, <jmlbuffer>)
