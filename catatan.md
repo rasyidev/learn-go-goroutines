@@ -45,3 +45,6 @@
 - Mendapatkan data dari beberapa channel
 - Dapat memilih data tercepat dari beberapa channel
 - Jika data datang bersamaan, akan dipilih secara acak
+
+## Default Select
+- Mengatasi select channel dalam loop yang tidak ada datanya
