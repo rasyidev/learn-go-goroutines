@@ -40,3 +40,8 @@
 ## Range Channel
 - Jumlah data di dalam channel tidak menentu, sehingga sulit untuk melihat isi datanya
 - Dapat diselesaikan dengan **mengulang isi channel selama channel belum di-close**
+
+## Select Channel
+- Mendapatkan data dari beberapa channel
+- Dapat memilih data tercepat dari beberapa channel
+- Jika data datang bersamaan, akan dipilih secara acak
