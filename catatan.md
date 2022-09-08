@@ -36,3 +36,7 @@
 - Untuk menampung data antrian di dalam channel
 - Biasa digunakan jika lebih dari 1 data yang akan dikirim ke channel tertentu
 - Dapat ditentukan jumlah buffer: make(chan <tipedata>, <jmlbuffer>)
+
+## Range Channel
+- Jumlah data di dalam channel tidak menentu, sehingga sulit untuk melihat isi datanya
+- Dapat diselesaikan dengan **mengulang isi channel selama channel belum di-close**
