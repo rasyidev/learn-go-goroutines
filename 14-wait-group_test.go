@@ -29,3 +29,13 @@ func TestTheRealAsynchronous(t *testing.T) {
 	group.Wait()
 	fmt.Println("Selesai")
 }
+
+/*
+Proses selesai
+.....
+Proses selesai
+Selesai
+--- PASS: TestTheRealAsynchronous (2.06s)
+PASS
+ok      learn-go-goroutines     2.102s
+*/
