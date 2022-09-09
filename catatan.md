@@ -81,3 +81,7 @@
   - `Add(n int)`, untuk menambah n antrian
   - `Done()`, untuk mengurangi antrian `Add(-1)`
   - `Wait()`, untuk semua menunggu semua proses sampai selesai dijalankan
+
+## Once
+- Fitur untuk memastikan suatu function dijalankan hanya satu kali
+- Berupa struct `sync.Once`
