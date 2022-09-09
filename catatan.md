@@ -71,3 +71,13 @@
 
 ## Deadlock
 - Kondisi saat proses goroutine saling menunggu lock sehingga tidak ada satupun goroutine yang bisa jalan
+
+## WaitGroup
+- Fitur yang digunakan untuk menunggu proses goroutine selesai dilakukan
+- Sebelumnya masih menggunakan `time.Sleep()` untuk simulasi menunggu proses, hal ini kurang representatif
+- Menggunakan WaitGroup lebih representatif
+- Berupa struct `sync.WaitGroup`
+- **Functions**
+  - `Add(n int)`, untuk menambah n antrian
+  - `Done()`, untuk mengurangi antrian `Add(-1)`
+  - `Wait()`, untuk semua menunggu semua proses sampai selesai dijalankan
