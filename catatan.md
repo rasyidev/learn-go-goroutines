@@ -85,3 +85,10 @@
 ## Once
 - Fitur untuk memastikan suatu function dijalankan hanya satu kali
 - Berupa struct `sync.Once`
+
+## Pool
+- Implementasi design pattern **object pool pattern**
+- Tempat menyimpan data, jika data sudah digunakan, tempat penyimpanan ini disimpan kembali
+- Sering digunakan untuk koneksi dengan database
+- Pool sudah aman dari _race condition_
+- Berupa struct `sync.Pool` 
