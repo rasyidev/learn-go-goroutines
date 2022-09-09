@@ -21,6 +21,8 @@ func TestOnce(t *testing.T) {
 		go func() {
 			group.Add(1)
 			once.Do(OnlyOnce)
+			// kalau kita jalankan tanpa once.Do(), akan terjadi race condition
+			// OnlyOnce()
 			group.Done()
 		}()
 	}
