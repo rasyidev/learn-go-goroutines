@@ -48,3 +48,7 @@
 
 ## Default Select
 - Mengatasi select channel dalam loop yang tidak ada datanya
+
+## Race Condition
+- Variabel yang sama yang diakses secara concurent (menggunakan goroutine) maupun paralel memiliki potensi terkena race condition
+- Race Condition, kondisi saat suatu variabel diakses dan diubah secara bersamaan sehingga terdapat data yang hilang
