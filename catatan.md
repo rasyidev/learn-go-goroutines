@@ -92,3 +92,12 @@
 - Sering digunakan untuk koneksi dengan database
 - Pool sudah aman dari _race condition_
 - Berupa struct `sync.Pool` 
+
+## Map
+- Mirip dengan tipe data map, tapi Map yang ini sudah bebas dari _race condition_
+- Berupa struct `sync.Map`
+- **Functions**
+  - `Store(key, value)`
+  - Load(key)
+  - Delete(key)
+  - Range(function(key, value))
