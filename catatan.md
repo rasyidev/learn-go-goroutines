@@ -56,9 +56,15 @@
 ## Mutex (Mutual Exclusion)
 - Digunakan untuk mengatasi race condition. 
 - Berupa struct `sync.Mutex`
-- Dapat digunakan untuk mekanisme lock-unlock terhadap goroutine
+- Dapat digunakan untuk mekanisme lock-unlock variabel yang diakses oleh goroutine
 - Hanya satu goroutine dalam satu waktu yang dapat melakukan lock/unlock
 - Analogi: Antrian ke toilet, tiap antrian 
   - Masuk, Kunci pintu (lock)
   - Buang hajat (kerjakan job)
   - Buka pintu, keluar (unlock)
+
+## RWMutex (Read Write Mutex)
+- Memiliki dua lock: lock untuk read dan lock untuk write
+- Berupa struct `sync.RWMutex`
+- Dapat digunakan untuk mekanisme lock-unlock variabel yang diakses oleh goroutine pada saat read dan write
+- Sebenarnya dapat menggunakan Mutex, tapi akan rebutan antara proses membaca dan mengubah data
