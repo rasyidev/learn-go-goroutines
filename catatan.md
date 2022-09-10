@@ -101,3 +101,11 @@
   - Load(key)
   - Delete(key)
   - Range(function(key, value))
+
+## Cond
+- Mekanisme locking dengan kondisi tertentu
+- Membutuhkan locker (Mutex atau RWMutex)
+- Terdapat function `Wait()` untuk menunggu semua proses selesai
+  - `Signal()`, memberitahu (satu) goroutine untuk berhenti menunggu
+  - `Broadcast()`, memberitahu semua goroutine yang tersisa untuk berhenti menunggu
+- Untuk membuat cond dapat menggunakan `sync.NewCond()`
