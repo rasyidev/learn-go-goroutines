@@ -125,3 +125,17 @@
 ## time.AfterFunc
 - Digunakan untuk menjalankan function dengan delay tertentu
 - Tidak perlu menggunakan channel, cukup kirim function yang akan dipanggil
+
+## time.Ticker
+- Representasi kejadian yang berulang
+- Saat ticker sudah expire, event dikirim ke dalam channel
+- `time.NewTicker(duration)`
+
+## GOMAXPROCS
+- Function yang dapat digunakan untuk mengubah atau mengambbil jumlah thread pada komputer yang digunakan
+- Secara default, jumlah thread Go Lang sama dengan jumlah CPU komputer
+- `runtime.NumCPU()`, menghitung total CPU pada komputer
+- `runtime.GOMAXPROCS(n)`, menghitung jumlah thread pada komputer
+  - n>=1: Mengubah thread
+  - n==-1: menghitung jumlah thread
+- `runtime.NumGoroutine()`, menghitung total goroutine yang sedang berjalan pada komputer
