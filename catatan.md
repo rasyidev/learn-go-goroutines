@@ -109,3 +109,19 @@
   - `Signal()`, memberitahu (satu) goroutine untuk berhenti menunggu
   - `Broadcast()`, memberitahu semua goroutine yang tersisa untuk berhenti menunggu
 - Untuk membuat cond dapat menggunakan `sync.NewCond()`
+
+## Atomic
+- Digunakan untuk menggunakan tipe data primitive secara aman pada proses concurrent (goroutine)
+- Dengan menggunakan Atomic, tidak perlu menggunakan locking (Mutex dan RWMutex)
+
+## time.Timer
+- Representasi dari kejadian
+- Saat timer sudah expire, event dikirim ke dalam channel
+- `time.NewTimer(duration)`
+
+## time.After
+- Digunakaan saat hanya membutuhkan channel saja, tidak membutuhkan data Timer
+
+## time.AfterFunc
+- Digunakan untuk menjalankan function dengan delay tertentu
+- Tidak perlu menggunakan channel, cukup kirim function yang akan dipanggil
